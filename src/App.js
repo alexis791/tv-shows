@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { MOBILE, TABLET, LAPTOP, DESKTOP, TV } from './components/constants'
 
 const App = styled.section`
 	min-width: 360px;
@@ -6,9 +7,10 @@ const App = styled.section`
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
+	font-family: 'Roboto';
 
 	/* Mobiles devices  */
-	@media (min-width: 320px) {
+	@media (min-width: ${MOBILE}) {
 		background-color: red;
 		&::after {
 			content: 'Mobiles devices';
@@ -16,7 +18,7 @@ const App = styled.section`
 	}
 
 	/** Ipads, tablets */
-	@media (min-width: 480px) {
+	@media (min-width: ${TABLET}) {
 		background-color: blue;
 		&::after {
 			content: 'Ipads, tablets';
@@ -24,7 +26,7 @@ const App = styled.section`
 	}
 
 	/** Small screens, laptops */
-	@media (min-width: 780px) {
+	@media (min-width: ${LAPTOP}) {
 		background-color: green;
 		&::after {
 			content: 'Smalls screens, laptops';
@@ -32,7 +34,7 @@ const App = styled.section`
 	}
 
 	/** Desktop and Large screens */
-	@media (min-width: 1025px) {
+	@media (min-width: ${DESKTOP}) {
 		background-color: orange;
 		&::after {
 			content: 'Desktop and large screens';
@@ -40,7 +42,7 @@ const App = styled.section`
 	}
 
 	/** Extra large screens, TV */
-	@media (min-width: 1200px) {
+	@media (min-width: ${TV}) {
 		background-color: yellowgreen;
 		&::after {
 			content: 'Extra large screens';

@@ -13,7 +13,7 @@ const Wrapper = styled.header`
 
 const Container = styled.div`
 	height: inherit;
-	max-width: 1900px;
+	max-width: 1400px;
 	position: relative;
 	display: flex;
 	flex-direction: row;

@@ -27,9 +27,9 @@ const NavWrapper = styled.nav`
 
 const Navbar = () => (
 	<NavWrapper>
-		<LinkButton to='/populares'>Más Populares</LinkButton>
-		<LinkButton to='/votados'>Más votados</LinkButton>
-		<LinkButton to='/vistos'>Más vistos</LinkButton>
+		<LinkButton to='/'>Más Populares</LinkButton>
+		<LinkButton to='/votadas'>Más votadas</LinkButton>
+		<LinkButton to='/vistas'>Más vistas</LinkButton>
 		<LinkButton to='/favoritos'>Favoritos</LinkButton>
 	</NavWrapper>
 )

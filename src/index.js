@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom'
 import 'normalize.css'
 import App from './App'
 import Header from './components/organisms/Header'
-import Dashboard from './views/Dashboard'
+import Content from './components/organisms/Content'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.render(
 	<App>
-		<Header />
-		<Dashboard />
+		<Router>
+			<Header />
+			<Content />
+		</Router>
 	</App>,
 	document.getElementById('root')
 )

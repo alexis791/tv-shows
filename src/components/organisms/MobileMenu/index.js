@@ -19,10 +19,10 @@ const Wrapper = styled.section`
 
 const MobileMenu = () => (
 	<Wrapper>
-		<LinkButton>Más Populares</LinkButton>
-		<LinkButton>Más votados</LinkButton>
-		<LinkButton>Más vistos</LinkButton>
-		<LinkButton>Favoritos</LinkButton>
+		<LinkButton to='/populares'>Más Populares</LinkButton>
+		<LinkButton to='/votados'>Más votados</LinkButton>
+		<LinkButton to='/vistos'>Más vistos</LinkButton>
+		<LinkButton to='/favoritos'>Favoritos</LinkButton>
 	</Wrapper>
 )
 

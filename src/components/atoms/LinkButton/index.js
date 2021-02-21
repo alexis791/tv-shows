@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { INDIGO, WHITE, LAPTOP } from '../../constants'
+import { NavLink } from 'react-router-dom'
 
-const LinkButton = styled.a`
+const LinkButton = styled(NavLink)`
 	text-decoration: none;
 	font-size: 1.25rem;
 	width: 100%;

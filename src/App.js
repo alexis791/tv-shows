@@ -2,11 +2,9 @@ import styled from 'styled-components'
 import { MOBILE, TABLET, LAPTOP, DESKTOP, TV } from './components/constants'
 
 const App = styled.section`
-	min-width: 360px;
-	max-width: 1900px;
+	min-width: 320px;
 	width: 100%;
 	height: 100%;
-	margin: 0 auto;
 	font-family: 'Roboto';
 
 	/* Mobiles devices  */

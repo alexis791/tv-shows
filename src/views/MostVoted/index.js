@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Route } from 'react-router-dom'
+import { LAPTOP } from '../../components/constants'
 import Title from '../../components/atoms/Title'
 import TvShow from '../../components/organisms/TvShow'
 import Shows from '../../components/organisms/Shows'
@@ -7,6 +7,9 @@ import Shows from '../../components/organisms/Shows'
 const Wrapper = styled.section`
 	width: inherit;
 	height: inherit;
+	@media (min-width: ${LAPTOP}) {
+		padding-left: 20px;
+	}
 `
 
 const MostVoted = () => (

@@ -25,7 +25,7 @@ const LinkButton = styled(NavLink)`
 	@media (min-width: ${LAPTOP}) {
 		flex-direction: row;
 		height: inherit;
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 `
 export default LinkButton

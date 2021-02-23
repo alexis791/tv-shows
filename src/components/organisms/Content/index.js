@@ -7,6 +7,7 @@ import MostPopular from '../../../views/MostPopular'
 import MostViewed from '../../../views/MostViewed'
 import MostVoted from '../../../views/MostVoted'
 import Aside from '../../organisms/Aside'
+import ShowTvDetails from '../../../views/ShowTvDetails'
 
 const Wrapper = styled.section`
 	background-color: white;
@@ -21,20 +22,24 @@ const Wrapper = styled.section`
 
 const Content = () => (
 	<Wrapper>
-		<Aside />
-		<div>
-			<Switch>
-				<Route exact path='/'>
-					<MostPopular />
-				</Route>
-				<Route exact path='/votadas'>
-					<MostVoted />
-				</Route>
-				<Route exact path='/vistas'>
-					<MostViewed />
-				</Route>
-			</Switch>
-		</div>
+		{/* <Aside /> */}
+		<Switch>
+			<Route exact path='/'>
+				<MostPopular />
+			</Route>
+			<Route exact path='/votadas'>
+				<MostVoted />
+			</Route>
+			<Route exact path='/vistas'>
+				<MostViewed />
+			</Route>
+			<Route exact path='/favoritos'>
+				<h1>Favoritos</h1>
+			</Route>
+			<Route exact path='/show/:id'>
+				<ShowTvDetails />
+			</Route>
+		</Switch>
 	</Wrapper>
 )
 

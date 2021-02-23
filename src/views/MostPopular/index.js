@@ -17,24 +17,19 @@ const MostPopular = () => (
 	<Wrapper>
 		<Title>Más populares</Title>
 		<Shows>
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
-			<TvShow />
+			<TvShow to='/show/1' />
+			<TvShow to='/show/1' />
+			<TvShow to='/show/1' />
+			<TvShow to='/show/1' />
+			<TvShow to='/show/1' />
+			<TvShow to='/show/1' />
+			<TvShow to='/show/1' />
+			<TvShow to='/show/1' />
+			<TvShow to='/show/1' />
+			<TvShow to='/show/1' />
+			<TvShow to='/show/1' />
+			<TvShow to='/show/1' />
+			<TvShow to='/show/1' />
 		</Shows>
 	</Wrapper>
 )
